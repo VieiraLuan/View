@@ -1,0 +1,95 @@
+
+
+.table {
+    background-color: #508bfc;
+    color: aliceblue;
+}
+
+
+.card {
+    text-align: center;
+}
+
+
+
+.rodape {
+    text-align: center;
+    color: #508bfc;
+ 
+   
+
+}
+
+.dashboard{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: #508bfc;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+
+.welcome{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: #508bfc;
+    font-size: xx-large;
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+
+.welcomeLogin{
+    
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    font-weight: 500;
+    font-size: xx-large;
+    background-color: #508bfc;
+}
+
+.formulario{
+    text-align: center;
+}
+
+.logoLogin{
+    margin: auto;
+}
+
+.loginWrapper{
+    border-style: groove;
+    border-color: #508bfc;
+}
+
+#table-wrapper{
+    padding-top: 10px;
+}
+
+tr:hover{
+    background-color: white;
+    color: #508bfc;
+}
+
+.center{
+    margin: auto;
+}
+
+footer{
+    padding-top: 100px;
+}
+
+.formWrapper{
+    color: #508bfc;
+}
+
+
+
+
+
+

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+    <!-- Css -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Adicionar Despesa</title>
+
+</head>
+
+<body>
+
+   
+    <!--Nav Menu-->
+    <div class="container">
+
+
+        <div class="row">
+
+            <div class="col-sm-12">
+
+                <nav class="navbar navbar-expand-sm navebar">
+
+                    <a class="navbar-brand" href="homepage.html"><img src="/imagens/logo.png" alt=""> FINTECH</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="col-sm-10" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dashboard</a>
+                            </li>
+
+                            <!-- Receitas -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Receitas
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/adicionarReceita.html">Adicionar </a></li>
+                                    <li><a class="dropdown-item" href="#">Gerenciar </a></li>
+                                    <li><a class="dropdown-item" href="#">Todas Receitas</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Despesas -->
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Despesas
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="adicionarDespesa.html">Adicionar </a></li>
+                                    <li><a class="dropdown-item" href="#">Gerenciar </a></li>
+                                    <li><a class="dropdown-item" href="#">Todas Despesas</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Investimentos -->
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Investimentos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Adicionar </a></li>
+                                    <li><a class="dropdown-item" href="#">Gerenciar </a></li>
+                                    <li><a class="dropdown-item" href="#">Todos Investimentos</a></li>
+                                </ul>
+                            </li>
+
+
+                            <!-- Objetivos -->
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Objetivos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Adicionar </a></li>
+                                    <li><a class="dropdown-item" href="#">Gerenciar </a></li>
+                                    <li><a class="dropdown-item" href="#">Todos Objetivos </a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-2" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+
+
+                            <!-- Perfil -->
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-person-circle"></i> Perfil</a>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Editar Dados </a></li>
+                                    <li><a class="dropdown-item" href="#">Editar Foto</a></li>
+                                    <li><a class="dropdown-item" href="#">Sobre </a></li>
+                                    <li><a class="dropdown-item" href="index.html">Sair </a></li>
+                                </ul>
+                            </li>
+
+
+
+
+
+                        </ul>
+                    </div>
+
+                </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+
+
+        <div class="row pt-2">
+
+            <h1 class="welcomeLogin"> Adicionar Despesa </h1>
+            <div class="col-sm-6">
+
+                <form class="formWrapper">
+                    <div class="pt-2">
+
+                        <!-- DataReceita -->
+                        <label class="form-label" for="dtReceita">
+                            <h6>Escolha a data da despesa</h6>
+                        </label>
+                        <input type="date" id="dtReceita" class="form-control " style="text-align:center;" />
+
+                        <h3 class="mt-1"></h3>
+                        <!-- ValorReceita -->
+                        <label class="form-label" for="password">
+                            <h6>Digite o valor da despesa</h6>
+                        </label>
+                        <input type="text" placeholder="Valor em R$" id="valorReceita" class="form-control"
+                            style="text-align: center;" />
+
+                        <h3 class="mb-4"></h3>
+                        <h6>Selecione a origem da despesa</h6>
+                        <select class="form-select" aria-label="Default select example">
+                            <option></option>
+                            <option value="1" selected> Alimentação </option>
+                            <option value="2"> Moradia </option>
+                            <option value="3"> Transporte </option>
+                        </select>
+
+
+                    </div>
+
+                    <a href="/homepage.html"><button class="btn btn-primary btn-group btn-group-sm mt-3"
+                            type="button">Adicionar Receita</button></a>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Saudação>
+    <div class="container">
+
+        <div class="row">
+
+
+            <div class="col-sm-8">
+
+                <p class="welcome">Bem vindo ao Fintech® </br>Vamos decolar sua vida financeira ?</p>
+
+                <p class="welcome"><img src="/imagens/Logo300x300.png" alt=""></p>
+
+            </div>
+
+           
+
+
+
+
+
+        </div>
+    </div>-->
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <!--Rodape-->
+    <footer>
+        <p class="rodape bg-light">Fintech®</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
